@@ -75,9 +75,11 @@ class TestAdd:
         # 点击 保存
         self.driver.find_element(MobileBy.ID, "com.tencent.wework:id/gq7").click()
 
-        sleep(2)
+        # sleep(2)
         print(self.driver.page_source)
-
+        # while True:
+        #     print(self.driver.page_source)
+        #     sleep(0.5)
         self.driver.find_element(MobileBy.XPATH, "//*[@text='添加成功']")
         # assert "添加成功" in self.driver.find_element(MobileBy.XPATH, "//*[@class='android.widget.Toast']").text
 
